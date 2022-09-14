@@ -9,4 +9,4 @@ const errorHandler = async (err: Error, req: Request, res: Response, _next: Next
     : res.status(status.INTERNAL_SERVER_ERROR).json({ message: 'Run to the hills!' });
 };
 
-export default { errorHandler };
+export default errorHandler;
