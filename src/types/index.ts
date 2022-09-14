@@ -4,3 +4,10 @@ export type Product = {
   amount: string;
   orderId?: number;
 };
+
+export type User = {
+  username: string;
+  classe: string;
+  level: number;
+  password: string;
+};
