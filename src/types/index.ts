@@ -6,6 +6,7 @@ export type Product = {
 };
 
 export type User = {
+  id?:number;
   username: string;
   classe: string;
   level: number;
