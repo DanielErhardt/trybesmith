@@ -5,16 +5,19 @@ export type Product = {
   orderId?: number;
 };
 
-export type User = {
-  id?:number;
-  username: string;
-  classe: string;
-  level: number;
-  password: string;
-};
-
 export type Order = {
   id: number;
   userId: number;
   productsIds: number[];
+};
+
+export type UserLogin = {
+  username: string;
+  password: string;
+};
+
+export type User = UserLogin & {
+  id?:number;
+  classe: string;
+  level: number;
 };
