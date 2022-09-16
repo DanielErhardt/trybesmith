@@ -3,10 +3,13 @@ import errorHandler from './middlewares/errorHandler';
 import productsRouter from './routers/products';
 import usersRouter from './routers/users';
 import ordersRouter from './routers/orders';
+import loginRouter from './routers/login';
 
 const app = express();
 
 app.use(express.json());
+
+app.use('/login', loginRouter);
 
 app.use('/products', productsRouter);
 
