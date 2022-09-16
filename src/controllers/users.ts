@@ -1,14 +1,21 @@
 import { Request, Response } from 'express';
 import status from 'http-status';
 import service from '../services/users';
-// import { User } from '../types';
+import { UserLogin, User } from '../types';
+
+const login = async (req: Request, res: Response) => {
+  const loginInfo = req.body as UserLogin;  
+  const token = await service.findByLoginInfo(loginInfo);
+  res.status(status.OK).json({ token });
+};
 
 const create = async (req: Request, res: Response): Promise<Response> => {
-  const { body: { username, classe, level, password } } = req;
-  const token = await service.create({ username, classe, level, password });
+  const user = req.body as User;
+  const token = await service.create(user);
   return res.status(status.CREATED).json({ token });
 };
 
 export default {
+  login,
   create,
 };
