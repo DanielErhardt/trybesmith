@@ -1,5 +1,5 @@
 export default class HttpException extends Error {
-  httpStatus: number;
+  public readonly httpStatus: number;
 
   constructor(httpStatus: number, message: string) {
     super(message);
