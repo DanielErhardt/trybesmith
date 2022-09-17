@@ -44,3 +44,11 @@ export const userSchema = Joi.object({
 }).messages({
   'any.required': REQUIRED_FIELD,
 });
+
+export const orderSchema = Joi.object({
+  productIds: Joi.array().items(Joi.number()).required().messages({
+    'array.base': '422|{#label} must be an array',
+  }),
+}).messages({
+  'any.required': REQUIRED_FIELD,
+});
