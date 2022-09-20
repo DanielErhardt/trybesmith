@@ -46,9 +46,12 @@ export const userSchema = Joi.object({
 });
 
 export const orderSchema = Joi.object({
-  productIds: Joi.array().items(Joi.number()).required().messages({
-    'array.base': '422|{#label} must be an array',
-  }),
+  productsIds: Joi.array().min(1).items(Joi.number()).required()
+    .messages({
+      'array.base': '422|{#label} must be an array',
+      'array.items': '422|{#label} test',
+      'array.min': '422|{#label} must include only numbers',
+    }),
 }).messages({
   'any.required': REQUIRED_FIELD,
 });
