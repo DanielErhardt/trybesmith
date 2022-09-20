@@ -7,6 +7,15 @@ const getAll = async (req: Request, res: Response): Promise<Response> => {
   return res.status(status.OK).json(orders);
 };
 
+const create = async (req: Request, res: Response) => {
+  const userId = Number(req.headers.userId);
+  const { body: { productsIds } } = req;
+
+  const createdOrder = await service.create({ userId, productsIds });
+  res.status(status.CREATED).json(createdOrder);
+};
+
 export default {
   getAll,
+  create,
 };

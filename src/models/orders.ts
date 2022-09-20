@@ -1,4 +1,4 @@
-import { RowDataPacket } from 'mysql2';
+import { ResultSetHeader, RowDataPacket } from 'mysql2';
 import connection from './connection';
 import { Order } from '../types';
 
@@ -25,8 +25,17 @@ const getAll = async (): Promise<Order[]> => {
   return reduced;
 };
 
-export default {
-  getAll,
+const create = async (userId: number): Promise<ResultSetHeader> => {
+  const [result] = await connection.execute<ResultSetHeader>(
+    `INSERT INTO Trybesmith.Orders
+    SET userId = (SELECT id FROM Trybesmith.Users WHERE id = ?);`,
+    [userId],
+  );
+  
+  return result;
 };
 
-// JSON_ARAYAGG
+export default {
+  getAll,
+  create,
+};
