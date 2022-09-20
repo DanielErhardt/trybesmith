@@ -6,7 +6,7 @@ const errorHandler = async (err: Error, req: Request, res: Response, _next: Next
   const { httpStatus, message } = err as HttpException;
   return httpStatus
     ? res.status(httpStatus).json({ message })
-    : res.status(status.INTERNAL_SERVER_ERROR).json({ message: 'Run to the hills!' });
+    : res.status(status.INTERNAL_SERVER_ERROR).json(err);
 };
 
 export default errorHandler;
