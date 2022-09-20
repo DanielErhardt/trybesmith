@@ -6,7 +6,7 @@ export type Product = {
 };
 
 export type Order = {
-  id: number;
+  id?: number;
   userId: number;
   productsIds: number[];
 };
