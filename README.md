@@ -1,8 +1,8 @@
-<details>
-<summary>:brazil: Versão em Português</summary>
 # Trybesmith
 
-Trybesmith é uma API simples para criar e gerenciar produtos, usuários e pedidos de um ferreiro com tema medieval.
+<details>
+<summary>:brazil: Versão em Português</summary>
+Trybesmith é uma API simples para criar e gerenciar produtos, usuários e pedidos de uma loja de ferreiro com tema medieval.
 
 ## Objetivo
 
@@ -17,13 +17,37 @@ Todos os arquivos fora do diretório /src foram criados e configurados pela Tryb
 - Tipagem estática e tipagem forte
 - Tipos primitivos e subtipos
 - Interfaces
-- Types aliases
+- Type aliases
 - Docker
 - MySQL
 - Node.js
 - Express
 - Commits convencionais
+
 </details>
 
 <details open>
-<summary>:us: English Version
+<summary>:us: English Version</summary>
+Trybesmith is a simple API for creating and managing products, users and orders of a blacksmith shop in a medieval setting.
+
+## Objective
+
+To practice concepts like static typing and strong typing, using primitive types and subtypes, type aliases and interfaces while implementing HTTP requests to a MySQL database. The API was built using the Model-Service-Controller standard.
+
+## Observations
+
+All files outside of /src directory were created and configured by Trybe.
+
+## Concepts, Tools and Languages
+
+- Static typing and strong typing
+- Primitive types and subtypes
+- Interfaces
+- Type aliases
+- Docker
+- MySQL
+- Node.js
+- Express
+- Conventional commits
+
+</details>
