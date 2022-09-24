@@ -22,7 +22,64 @@ Todos os arquivos fora do diretório /src foram criados e configurados pela Tryb
 - MySQL
 - Node.js
 - Express
+- JSON Web Token
 - Commits convencionais
+
+## Executando a aplicação localmente
+
+- Para instalar os containers docker:
+
+```
+docker-compose up -d
+```
+
+- Executar o terminal do container:
+
+```
+docker attach trybesmith
+```
+
+- Instalar as dependências, criar e popular o banco de dados:
+
+```
+npm install && npm run restore
+```
+
+- Inicializar a aplicação:
+
+```
+npm start
+```
+
+<br />
+
+## Endpoints
+
+### Login
+
+| Requisição | URL                         |
+| ---------- | --------------------------- |
+| `POST`     | http://localhost:3000/login |
+
+### Users
+
+| Requisição | URL                         |
+| ---------- | --------------------------- |
+| `POST`     | http://localhost:3000/users |
+
+### Products
+
+| Requisição | URL                            |
+| ---------- | ------------------------------ |
+| `GET`      | http://localhost:3000/products |
+| `POST`     | http://localhost:3000/products |
+
+### Orders
+
+| Requisição | URL                          |
+| ---------- | ---------------------------- |
+| `GET`      | http://localhost:3000/orders |
+| `POST`     | http://localhost:3000/orders |
 
 </details>
 
@@ -48,6 +105,63 @@ All files outside of /src directory were created and configured by Trybe.
 - MySQL
 - Node.js
 - Express
+- JSON Web Token
 - Conventional commits
+
+## Running the application locally
+
+- Install the docker containers:
+
+```
+docker-compose up -d
+```
+
+- Open container terminal:
+
+```
+docker attach trybesmith
+```
+
+- Install dependencies, create and populate the database:
+
+```
+npm install && npm run restore
+```
+
+- Start the application:
+
+```
+npm start
+```
+
+<br />
+
+## Endpoints
+
+### Login
+
+| Request | URL                         |
+| ------- | --------------------------- |
+| `POST`  | http://localhost:3000/login |
+
+### Users
+
+| Request | URL                         |
+| ------- | --------------------------- |
+| `POST`  | http://localhost:3000/users |
+
+### Products
+
+| Request | URL                            |
+| ------- | ------------------------------ |
+| `GET`   | http://localhost:3000/products |
+| `POST`  | http://localhost:3000/products |
+
+### Orders
+
+| Request | URL                          |
+| ------- | ---------------------------- |
+| `GET`   | http://localhost:3000/orders |
+| `POST`  | http://localhost:3000/orders |
 
 </details>
