@@ -1,16 +1,29 @@
-# 🚧 README em construção 🚧
+<details>
+<summary>:brazil: Versão em Português</summary>
+# Trybesmith
 
-<!-- Olá, Tryber!
+Trybesmith é uma API simples para criar e gerenciar produtos, usuários e pedidos de um ferreiro com tema medieval.
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+## Objetivo
 
-É essencial que você preencha esse documento por conta própria, ok?
+Colocar em prática conceitos como tipagem estática e tipagem forte, usando tipos primitivos, subtipos, type aliases e interfaces para implementar requisições HTTP a um banco de dados MySQL. A API foi construída usando o padrão Model-Service-Controller.
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+## Observações
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+Todos os arquivos fora do diretório /src foram criados e configurados pela Trybe.
 
--->
+## Conceitos, Ferramentas e Linguagens
+
+- Tipagem estática e tipagem forte
+- Tipos primitivos e subtipos
+- Interfaces
+- Types aliases
+- Docker
+- MySQL
+- Node.js
+- Express
+- Commits convencionais
+</details>
+
+<details open>
+<summary>:us: English Version
